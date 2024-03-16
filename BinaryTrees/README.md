@@ -1,15 +1,15 @@
-# BinaryTrees
-- 一些二叉树相关的操作(Some operations for binary tree)
-- [BinaryTreeGraph（JS版本）](#binarytreegraphjs版本)
-- [BinaryTreePrinter（Java版本）](#binarytreeprinterjava版本)
-  - [简介（Intro）](#简介intro)
-  - [核心API（Core API）](#核心apicore-api)
-  - [示例（Example）](#示例example)
-- [BinaryTreePrinterOC](#binarytreeprinteroc)
+[BinaryTreeGraph (JS version)]
+BinaryTreePrinter (Java version)
+Introduction
+Core API
+Example
+BinaryTreePrinterOC
 
-## BinaryTreeGraph（JS版本）
-- 用于展示二叉树的图形化小工具（Graph for displaying a binary tree）
-  - - 在线演示：[BinaryTreeGraph](http://520it.com/binarytrees/)
+## BinaryTreeGraph (JS Version)
+This tool is used for visualizing binary trees in a graphical manner.
+
+It serves as a graphical utility for displaying binary trees.
+Online demonstration: BinaryTreeGraph](http://520it.com/binarytrees/)
 
 ![](https://img2018.cnblogs.com/blog/497279/201904/497279-20190426144618950-1992989113.png)
 
@@ -21,40 +21,44 @@
 
 ![](https://img2018.cnblogs.com/blog/497279/201904/497279-20190426144636366-250176607.png)
 
-## BinaryTreePrinter（Java版本）
-### 简介（Intro）
-- 树状打印一棵二叉树（Print a binary tree like a real tree）
-- 比如输入一棵二叉搜索树（For exampe, if you input a binary search tree）: 
-  -  [381, 12, 410, 9, 40, 394, 540, 35, 190, 476, 760, 146, 445, 600, 800]
-- 就会输出（Output）:
 
+BinaryTreePrinter (Java Version)
+Introduction
+Prints a binary tree in a tree-like structure.
+
+For example, if you input a binary search tree:
+
+[381, 12, 410, 9, 40, 394, 540, 35, 190, 476, 760, 146, 445, 600, 800]
+It will output:
 ![](https://img2018.cnblogs.com/blog/497279/201904/497279-20190406094223007-512106824.png)
 
 - 或者输出（Or output）
 
 ![](https://img2018.cnblogs.com/blog/497279/201904/497279-20190406094237106-573651641.png)
 
-### 核心API（Core API）
+
+Core API
 ```java
 public final class BinaryTrees {
-	// 打印一棵二叉树
+	// Print a binary tree
 	public static void print(BinaryTreeInfo tree);
 	public static void print(BinaryTreeInfo tree, PrintStyle style);
 
-	// 打印一棵二叉树（打印完自动换行）
+	// Print a binary tree with automatic newline after printing
 	public static void println(BinaryTreeInfo tree);
 	public static void println(BinaryTreeInfo tree, PrintStyle style);
 
-	// 获得一棵二叉树的打印字符串
+	// Get the string representation of a binary tree
 	public static String printString(BinaryTreeInfo tree);
 	public static String printString(BinaryTreeInfo tree, PrintStyle style);
 
-	// 可选的打印样式
+	// Optional print styles
 	public enum PrintStyle {
 		LEVEL_ORDER, 
 		INORDER
 	}
 }
+
 ```
 
 ### 示例（Example）
