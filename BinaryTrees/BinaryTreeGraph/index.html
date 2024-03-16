@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BinaryTreeGraph</title>
+    <link rel="icon" href="img/logo.ico" type="image/x-icon" >
+    <link rel="stylesheet" type="text/css" href="css/joint.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.min.css" />
+</head>
+<body>
+
+<div id="controls">
+
+    <div id="common" class="box">
+        <div class="type">
+            Type:
+            <select name="type">
+                <option value="0">Binary Tree</option>
+                <option value="1">Binary Search Tree</option>
+               
+            </select>
+        </div>
+    </div>
+
+    <div class="control box" id="bt">
+        <h2>Binary Tree</h2>
+        <div class="content">
+            <div>
+                <div>
+                    <input type="text" class="node" placeholder="Node"><br>
+                    <input type="text" class="left" placeholder="Left Child"><br>
+                    <input type="text" class="right" placeholder="Right Child"><br>
+                </div>
+                <div>
+                    <input class="add" type="button" value="Add">
+                    <input class="remove" type="button" value="Remove">
+                    <input class="clear" type="button" value="Clear">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bst control box" id="bst" style="display: none">
+        <h2>Binary Search Tree</h2>
+        <div class="content"></div>
+    </div>
+
+    
+
+  
+
+    <div class="bst control box" id="bh" style="display: none">
+        <h2>Binary Heap</h2>
+        <div class="content">
+            <div class="heap-type">
+                Type:
+                <label>Max Heap<input class="max-heap" name="heap-type" type="radio" checked></label>
+                <label>Min Heap<input class="min-heap" name="heap-type" type="radio"></label>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="modules" style="display: none;">
+    <div class="paper"></div>
+
+    <div class="orders">
+        <div>
+            All Nodes [<span class="node-count">0</span>]:
+            <select name="orders">
+                <option value="2">Inorder Traversal</option>
+                <option value="0">Level Order Traversal</option>
+                <option value="1">Preorder Traversal</option>
+                <option value="3">Postorder Traversal</option>
+            </select>
+        </div>
+        <div><textarea class="show-order" disabled="disabled" placeholder="Traversal Data"></textarea></div>
+    </div>
+
+    <div class="link-type">
+        Arrow:
+        <label>Elbow<input class="elbow" type="radio" checked></label>
+        <label>Straight Line<input class="line" type="radio"></label>
+    </div>
+
+    <div class="bst-input">
+        <div>
+            <input type="text" class="max-count" placeholder="Maximum Random Quantity">
+            <input type="text" class="max-value" placeholder="Maximum Random Value">
+            <input class="random" type="button" value="Random">
+        </div>
+        <div>
+            <textarea class="data"
+                      placeholder="Please enter integers, separate data with commas or spaces&#10;Maximum Random Quantity default to 20&#10;Maximum Random Value default to 100"></textarea>
+        </div>
+        <div>
+            <input class="add" type="button" value="Add">
+            <input class="remove" type="button" value="Remove">
+            <input class="clear" type="button" value="Clear">
+        </div>
+    </div>
+</div>
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/lodash.min.js"></script>
+<script src="js/lib/backbone.min.js"></script>
+<script src="js/lib/joint.min.js"></script>
+<script src="js/lib/ext.min.js"></script>
+<script src="js/common.min.js"></script>
+<script src="js/tree/BinaryTree.min.js"></script>
+<script src="js/tree/BST.min.js"></script>
+<script src="js/tree/BBST.min.js"></script>
+<script src="js/tree/AVLTree.min.js"></script>
+<script src="js/tree/RBTree.min.js"></script>
+<script src="js/heap/Heap.min.js"></script>
+<script src="js/heap/BinaryHeap.min.js"></script>
+<script src="js/graph.min.js"></script>
+<script src="js/index.min.js"></script>
+</body>
+</html>
